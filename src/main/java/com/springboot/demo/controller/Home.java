@@ -30,12 +30,14 @@ public class Home {
         homeView.get(0).setViewt(homeViewtwo.subList(0,4));
         homeView.get(1).setViewt(homeViewtwo.subList(4,6));
         homeView.get(2).setViewt(homeViewtwo.subList(6,8));
-//        for (int i = 0; i<homeViewtwo.size();i++){
-//            System.out.print("id "+homeViewtwo.get(i).getId()+"   ");
-//            System.out.print("value  "+homeViewtwo.get(i).getView());
-//            System.out.print("value  "+homeViewtwo.get(i).getPath());
-//            System.out.println();
-//        }
+        for (int i = 0; i<homeViewtwo.size();i++){
+            System.out.print("id "+homeViewtwo.get(i).getId()+"   ");
+            System.out.print("value  "+homeViewtwo.get(i).getView());
+            System.out.print("value  "+homeViewtwo.get(i).getPath());
+            System.out.println();
+        }
+        System.out.println("-----------------");
+        System.out.println();
       return homeView;
     }
 

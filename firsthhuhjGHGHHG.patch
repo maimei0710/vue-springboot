@@ -1,0 +1,33 @@
+Index: src/main/java/com/springboot/demo/controller/Home.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/java/com/springboot/demo/controller/Home.java	(revision da42e0c031e1ceee794df29e544ed9d2af1407b0)
++++ src/main/java/com/springboot/demo/controller/Home.java	(date 1664382832241)
+@@ -24,18 +24,18 @@
+ //        for (int i = 0; i<homeView.size();i++){
+ //            System.out.print("id "+homeView.get(i).getId()+"   ");
+ //            System.out.print("value  "+homeView.get(i).getView());
+-//            System.out.println();
++            System.out.println();
+ //        }
+         List<HomeView> homeViewtwo = daoInterface.SelectViewDatatwo();
+         homeView.get(0).setViewt(homeViewtwo.subList(0,4));
+         homeView.get(1).setViewt(homeViewtwo.subList(4,6));
+         homeView.get(2).setViewt(homeViewtwo.subList(6,8));
+-//        for (int i = 0; i<homeViewtwo.size();i++){
+-//            System.out.print("id "+homeViewtwo.get(i).getId()+"   ");
+-//            System.out.print("value  "+homeViewtwo.get(i).getView());
+-//            System.out.print("value  "+homeViewtwo.get(i).getPath());
+-//            System.out.println();
+-//        }
++        for (int i = 0; i<homeViewtwo.size();i++){
++            System.out.print("id "+homeViewtwo.get(i).getId()+"   ");
++            System.out.print("value  "+homeViewtwo.get(i).getView());
++            System.out.print("value  "+homeViewtwo.get(i).getPath());
++            System.out.println();
++        }
+       return homeView;
+     }
+ 

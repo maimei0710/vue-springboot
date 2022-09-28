@@ -21,11 +21,11 @@ public class Home {
 
     ){
         List<HomeView> homeView = daoInterface.SelectViewData();
-//        for (int i = 0; i<homeView.size();i++){
-//            System.out.print("id "+homeView.get(i).getId()+"   ");
-//            System.out.print("value  "+homeView.get(i).getView());
-//            System.out.println();
-//        }
+        for (int i = 0; i<homeView.size();i++){
+            System.out.print("id "+homeView.get(i).getId()+"   ");
+            System.out.print("value  "+homeView.get(i).getView());
+            System.out.println();
+        }
         List<HomeView> homeViewtwo = daoInterface.SelectViewDatatwo();
         homeView.get(0).setViewt(homeViewtwo.subList(0,4));
         homeView.get(1).setViewt(homeViewtwo.subList(4,6));
